@@ -89,7 +89,19 @@ nav {
   letter-spacing: 0.02em;
   text-decoration: none;
 }
+.site-nav-studio a {
+  color: var(--blue);
+}
+
 .site-nav-studio-1 a {
+  color: var(--black);
+}
+
+.site-nav-portfolio a {
+  color: var(--black);
+}
+
+.site-nav-portfolio-1 a {
   color: var(--blue);
 }
 
@@ -139,24 +151,34 @@ nav {
   margin-right: 20px;
 }
 
+.auth-nav-indent {
+  padding-right: 30px;
+}
+
+.link-mail,
+.link-tel {
+  display: flex;
+  align-items: center;
+}
+
 .mail-icon {
   width: 16px;
   height: 12px;
-  fill: #757575;
   margin-right: 10px;
+  fill: #757575;
 }
 
 .tel-icon {
   width: 10px;
   height: 16px;
   margin-right: 10px;
-  margin-top: 4px;
   fill: #757575;
 }
-.mail-icon:hover,
-.mail-icon:focus,
-.tel-icon:hover,
-.tel-icon:focus {
+
+.link-mail:hover .mail-icon {
+  fill: #2196f3;
+}
+.link-tel:hover .tel-icon {
   fill: #2196f3;
 }
 
@@ -182,8 +204,8 @@ header {
 }
 
 .bg-title {
+  font-weight: 900;
   font-size: 44px;
-  line-height: 60px;
   text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
@@ -396,7 +418,6 @@ h2 {
 .command-img {
   display: flex;
   justify-content: space-between;
-  width: 1200px;
 }
 
 .command-img > li {
@@ -429,7 +450,8 @@ h2 {
   fill: #afb1b8;
 }
 
-.personal-soc-link:hover .master-soc-icon {
+.personal-soc-link:hover .master-soc-icon,
+.personal-soc-link:focus {
   fill: #ffffff;
 }
 
@@ -453,22 +475,24 @@ h2 {
 }
 
 .clients {
-  padding-top: 94px;
-  padding-bottom: 50px;
-  font-size: 36px;
-  font-weight: 700;
-}
-
-.icon-list {
-  display: flex;
+  margin-top: 94px;
   margin-bottom: 94px;
 }
 
+.title-clients {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 50px;
+}
+.icon-list {
+  display: flex;
+}
+
 .icon-border {
-  width: 170px;
-  height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  width: 170px;
+  height: 92px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -477,16 +501,22 @@ h2 {
 .icon-border:not(:last-child) {
   margin-right: 30px;
 }
+.icon-border:hover {
+  border: 1px solid #2196f3;
+}
 
+.hand:focus {
+  fill: #ffffff;
+}
+
+.icon-border:hover .icon-clients,
+.icon-clients:focus {
+  fill: #2196f3;
+}
 .icon-clients {
   width: 106px;
   height: 60px;
   fill: #afb1b8;
-}
-
-.icon-clients:hover,
-.icon-clients:focus {
-  fill: #2196f3;
 }
 
 .desc {
@@ -616,6 +646,11 @@ img {
 .footer-soc-link:hover .master-soc-icon {
   fill: #ffffff;
 }
+
+.master-soc-icon:hover {
+  fill: #ffffff;
+}
+
 .test2 {
   display: flex;
   justify-content: center;

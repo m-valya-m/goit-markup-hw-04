@@ -29,9 +29,9 @@
           </a>
 
           <ul class="site-nav">
-            <li class="site-nav-studio-1"><a href="#">Студия</a></li>
+            <li class="site-nav-studio"><a href="#">Студия</a></li>
 
-            <li class="site-nav-portfolio-1">
+            <li class="site-nav-portfolio">
               <a href="portfolio.html">Портфолио</a>
             </li>
 
@@ -39,16 +39,23 @@
           </ul>
         </nav>
         <ul class="auth-nav">
-          <li>
-            <svg class="mail-icon">
-              <use xlink:href="./img/icons.svg#mail"></use>
-            </svg>
-            <a href="mailo:info@devstudio.com">info@devstudio.com</a>
+          <li class="auth-nav-indent">
+            <a class="link-mail" href="mailo:info@devstudio.com">
+              <svg class="mail-icon" aria-label="перейти до наступної секції">
+                <use xlink:href="./img/icons.svg#mail"></use>
+              </svg>
+              <div>info@devstudio.com</div>
+            </a>
           </li>
-          <svg class="tel-icon">
-            <use xlink:href="./img/icons.svg#tel"></use>
-          </svg>
-          <li><a href="tel:+380961111111">+38 096 111 11 11</a></li>
+
+          <li>
+            <a class="link-tel" href="tel:+380961111111">
+              <svg class="tel-icon">
+                <use xlink:href="./img/icons.svg#tel"></use>
+              </svg>
+              <div>+38 096 111 11 11</div>
+            </a>
+          </li>
         </ul>
       </div>
     </header>
@@ -63,16 +70,7 @@
         </div>
       </section>
 
-      <!-- section 2 -->
-      <section class="icon">
-        <ul>
-          <li class="box"></li>
-          <li class="box"></li>
-          <li class="box"></li>
-          <li class="box"></li>
-        </ul>
-      </section>
-      <!----section 3---->
+      <!----section 2---->
 
       <section class="list">
         <div class="container">
@@ -131,7 +129,7 @@
         </div>
       </section>
 
-      <!----section 3---->
+      <!----section 4---->
       <section class="do-section">
         <div class="container">
           <h2 class="do">Чем мы занимаемся</h2>
@@ -164,7 +162,7 @@
         </div>
       </section>
 
-      <!----section 4---->
+      <!----section 5---->
       <section class="command">
         <div class="container">
           <h2 class="do">Наша команда</h2>
@@ -322,39 +320,51 @@
         </div>
       </section>
 
-      <!-- section 5-->
-      <section class="container">
-        <h2 class="clients">Постоянные клиенты</h2>
+      <!-- section 6-->
+      <section class="container clients" >
+        <h2 class="title-clients">Постоянные клиенты</h2>
         <ul class="icon-list">
           <li class="icon-border">
-            <svg class="icon-clients">
-              <use xlink:href="./img/icons.svg#ya&co"></use>
-            </svg>
+            <a class="hand" href="#">
+              <svg class="icon-clients">
+                <use xlink:href="./img/icons.svg#ya&co"></use>
+              </svg>
+            </a>
           </li>
           <li class="icon-border">
-            <svg class="icon-clients">
-              <use xlink:href="./img/icons.svg#company"></use>
-            </svg>
+            <a class="hand" href="">
+              <svg class="icon-clients">
+                <use xlink:href="./img/icons.svg#company"></use>
+              </svg>
+            </a>
           </li>
           <li class="icon-border">
-            <svg class="icon-clients">
-              <use xlink:href="./img/icons.svg#object"></use>
-            </svg>
+            <a  class="hand" href="">
+              <svg class="icon-clients">
+                <use xlink:href="./img/icons.svg#object"></use>
+              </svg>
+            </a>
           </li>
           <li class="icon-border">
+            <a  class="hand" href="">
             <svg class="icon-clients">
               <use xlink:href="./img/icons.svg#foster"></use>
             </svg>
+          </a>
           </li>
           <li class="icon-border">
+            <a  class="hand" href="">
             <svg class="icon-clients">
               <use xlink:href="./img/icons.svg#brand"></use>
             </svg>
+          </a>
           </li>
           <li class="icon-border">
+            <a  class="hand" href="">
             <svg class="icon-clients">
               <use xlink:href="./img/icons.svg#line"></use>
             </svg>
+          </a>
           </li>
         </ul>
       </section>
@@ -362,9 +372,7 @@
 
     <footer class="bg-footer">
       <div class="container">
-        
         <ul class="footer-list">
-         
           <li class="footer-adress">
             <a class="logo-footer" href="#"
               ><span class="logo-blue">Web</span
@@ -384,7 +392,7 @@
               </ul>
             </address>
           </li>
-         
+
           <li class="soc-info">
             <h2 class="footer-subscr" lang="ru">ПИСОЕДИНЯЙТЕСЬ</h2>
             <ul class="personal-soc">
@@ -417,7 +425,6 @@
                 </a>
               </li>
             </ul>
-            
           </li>
         </ul>
       </div>
