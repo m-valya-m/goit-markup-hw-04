@@ -161,6 +161,20 @@ nav {
   align-items: center;
 }
 
+.link-mail:focus .mail-icon {
+  fill: #2196f3;
+}
+
+.link-mail:focus {
+  outline: none;
+}
+.link-tel:focus .tel-icon {
+  fill: #2196f3;
+}
+.link-tel:focus {
+  outline: none;
+}
+
 .mail-icon {
   width: 16px;
   height: 12px;
@@ -450,15 +464,17 @@ h2 {
   fill: #afb1b8;
 }
 
-.personal-soc-link:hover .master-soc-icon {
+.personal-soc-link:focus .master-soc-icon {
   fill: #ffffff;
+  background-color: #2196f3;
 }
 
 .personal-soc-link:focus {
   background-color: #2196f3;
-  fill: #ffffff;
+  outline: none;
 }
-.master-soc-icon:focus {
+
+.personal-soc-link:hover .master-soc-icon {
   fill: #ffffff;
 }
 
@@ -496,6 +512,16 @@ h2 {
 }
 
 .icon-border {
+  display: flex;
+  justify-content: center;
+}
+
+.icon-border:not(:last-child) {
+  margin-right: 30px;
+}
+
+
+.hand {
   border: 1px solid #afb1b8;
   border-radius: 4px;
   width: 170px;
@@ -505,21 +531,30 @@ h2 {
   justify-content: center;
 }
 
-.icon-border:not(:last-child) {
-  margin-right: 30px;
-}
-.icon-border:hover {
+.hand:hover {
   border: 1px solid #2196f3;
 }
 
-.hand:focus {
-  fill: #ffffff;
+.hand:focus .icon-clients {
+  fill: #2196f3;
+  outline: none;
 }
+
+.hand:focus {
+  outline: none;
+  border: 1px solid #2196f3;
+}
+
 
 .icon-border:hover .icon-clients,
 .icon-clients:focus {
   fill: #2196f3;
 }
+
+.icon-border:focus {
+  border: 1px solid #2196f3;
+}
+
 .icon-clients {
   width: 106px;
   height: 60px;
@@ -656,6 +691,14 @@ img {
 
 .master-soc-icon:hover {
   fill: #ffffff;
+}
+
+.footer-soc-link:focus .master-soc-icon {
+  fill: #ffffff;
+}
+.footer-soc-link:focus {
+  background: #2196f3;
+  outline: none;
 }
 
 .test2 {
