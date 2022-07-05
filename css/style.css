@@ -450,8 +450,15 @@ h2 {
   fill: #afb1b8;
 }
 
-.personal-soc-link:hover .master-soc-icon,
+.personal-soc-link:hover .master-soc-icon {
+  fill: #ffffff;
+}
+
 .personal-soc-link:focus {
+  background-color: #2196f3;
+  fill: #ffffff;
+}
+.master-soc-icon:focus {
   fill: #ffffff;
 }
 
