@@ -124,6 +124,7 @@ nav {
 
 .auth-nav {
   display: flex;
+  margin-top: 8px;
 }
 
 .auth-nav a {
@@ -305,16 +306,6 @@ header {
 
 .btn-portfolio:hover,
 .btn-portfolio:focus {
-  border: none;
-  color: var(--blue);
-  border: none;
-  border-radius: 2px;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 26px;
-  text-align: center;
-  letter-spacing: 0.03em;
-  color: #212121;
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
@@ -520,7 +511,6 @@ h2 {
   margin-right: 30px;
 }
 
-
 .hand {
   border: 1px solid #afb1b8;
   border-radius: 4px;
@@ -544,7 +534,6 @@ h2 {
   outline: none;
   border: 1px solid #2196f3;
 }
-
 
 .icon-border:hover .icon-clients,
 .icon-clients:focus {
@@ -671,7 +660,9 @@ img {
   padding-bottom: 20px;
   text-align: start;
 }
-
+.footer-soc-icon {
+  fill: #ffffff;
+}
 .footer-soc-link {
   width: 44px;
   height: 44px;
